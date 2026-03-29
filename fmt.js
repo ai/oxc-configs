@@ -15,5 +15,6 @@ export default {
     newlinesBetween: true,
     order: 'asc'
   },
-  trailingComma: 'none'
+  trailingComma: 'none',
+  printWidth: 80
 }
