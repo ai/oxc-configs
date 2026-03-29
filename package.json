@@ -13,7 +13,7 @@
   "type": "module",
   "exports": {
     "./lint": "./lint.js",
-    "./fmt": "./oxfmt.js",
+    "./fmt": "./fmt.js",
     "./package.json": "./package.json"
   },
   "scripts": {
