@@ -23,7 +23,7 @@ pnpm add --save-dev @logux/oxc-configs oxlint
 
 Create `oxlint.config.ts`:
 
-```js
+```ts
 import loguxOxlintConfig from '@logux/oxc-configs/lint.js'
 import { defineConfig } from 'oxlint'
 
@@ -32,9 +32,17 @@ export default defineConfig(loguxOxlintConfig)
 
 Create `oxfmt.config.ts`:
 
-```js
+```ts
 import loguxOxfmtConfig from '@logux/oxc-configs/fmt.js'
 import { defineConfig } from 'oxfmt'
 
 export default defineConfig(loguxOxfmtConfig)
+```
+
+For compatibility in open source projects create `.prettierrc.js`:
+
+```ts
+import loguxOxfmtConfig from '@logux/oxc-configs/fmt.js'
+
+export default loguxOxfmtConfig
 ```
