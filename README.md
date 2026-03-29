@@ -16,7 +16,7 @@ Shareable code style and best practice for [Logux] projects.
 ## Install
 
 ```sh
-pnpm add --save-dev @logux/oxc-configs oxlint
+pnpm add --save-dev @logux/oxc-configs oxlint oxlint-tsgolint typescript
 ```
 
 ## Usage
