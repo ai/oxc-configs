@@ -31,6 +31,7 @@ export default {
     'import/no-duplicates': 'error',
     'import/no-named-default': 'error',
     'import/no-webpack-loader-syntax': 'error',
+    'import/no-unassigned-import': 'off',
 
     'prefer-let/prefer-let': [
       'error',
@@ -184,7 +185,10 @@ export default {
     {
       files: ['**/*.test.{js,jsx}', '**/*.test.{ts,tsx}'],
       rules: {
+        'unicorn/consistent-function-scoping': 'off',
+
         'node/global-require': 'off',
+
         'no-unused-expressions': 'off'
       }
     },
