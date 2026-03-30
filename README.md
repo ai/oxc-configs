@@ -16,7 +16,7 @@ Shareable code style and best practice for [Logux] projects.
 ## Install
 
 ```sh
-pnpm add --save-dev @logux/oxc-configs oxfmt oxlint oxlint-tsgolint typescript
+pnpm add --save-dev @logux/oxc-configs oxlint oxlint-tsgolint typescript
 ```
 
 ## Usage
@@ -42,9 +42,8 @@ Create `oxfmt.config.ts`:
 
 ```ts
 import loguxOxfmtConfig from '@logux/oxc-configs/fmt'
-import { defineConfig } from 'oxfmt'
 
-export default defineConfig(loguxOxfmtConfig)
+export default loguxOxfmtConfig
 ```
 
 For compatibility in open source projects create `.prettierrc.js`:
