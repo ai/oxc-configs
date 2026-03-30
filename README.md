@@ -27,7 +27,15 @@ Create `oxlint.config.ts`:
 import loguxOxlintConfig from '@logux/oxc-configs/lint'
 import { defineConfig } from 'oxlint'
 
-export default defineConfig(loguxOxlintConfig)
+export default defineConfig({
+  ...loguxOxlintConfig
+  rules: {
+    ...loguxOxlintConfig.rules
+  },
+  overrides: [
+    ...loguxOxlintConfig.overrides
+  }
+})
 ```
 
 Create `oxfmt.config.ts`:
