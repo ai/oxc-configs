@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.2.2
+
+- Fixed `no-floating-promises` and `no-void` conflict.
+
 ## 0.2.1
 
 - Reduced peer dependencies.
